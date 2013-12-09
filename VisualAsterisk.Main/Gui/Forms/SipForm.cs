@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+
+
+namespace VisualAsterisk.Main.Gui.SystemPanel
+{
+    public partial class SipForm : Form
+    {
+        public SipForm()
+        {
+            InitializeComponent();
+            //Sip s = ConfigManager.LoadSip();
+            //this.propertyGrid1.SelectedObject = s;
+        }
+    }
+}

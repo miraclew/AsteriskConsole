@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="operatorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 169</value>
+  </data>
+  <data name="operatorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="operatorLabel.Text" xml:space="preserve">
+    <value>拨 '0' 到接线员:</value>
+  </data>
+  <data name="attachfmtLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 45</value>
+  </data>
+  <data name="attachfmtLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="attachfmtLabel.Text" xml:space="preserve">
+    <value>附件格式: </value>
+  </data>
+  <data name="maxmessageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 87</value>
+  </data>
+  <data name="maxmessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 17</value>
+  </data>
+  <data name="maxmessageLabel.Text" xml:space="preserve">
+    <value>最多消息数: </value>
+  </data>
+  <data name="minmessageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 172</value>
+  </data>
+  <data name="minmessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="minmessageLabel.Text" xml:space="preserve">
+    <value>最短消息时间: </value>
+  </data>
+  <data name="maxmsgLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 130</value>
+  </data>
+  <data name="maxmsgLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="maxmsgLabel.Text" xml:space="preserve">
+    <value>最长消息时间: </value>
+  </data>
+  <data name="attachLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 78</value>
+  </data>
+  <data name="attachLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 17</value>
+  </data>
+  <data name="attachLabel.Text" xml:space="preserve">
+    <value>录音作为附件加到电子邮件:</value>
+  </data>
+  <data name="extensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 33</value>
+  </data>
+  <data name="extensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="extensionLabel.Text" xml:space="preserve">
+    <value>查收语音邮件分机:</value>
+  </data>
+  <data name="maxGreetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 123</value>
+  </data>
+  <data name="maxGreetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="maxGreetLabel.Text" xml:space="preserve">
+    <value>最大问候时长 (秒):</value>
+  </data>
+  <data name="localExtenDigitsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 24</value>
+  </data>
+  <data name="localExtenDigitsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="localExtenDigitsLabel.Text" xml:space="preserve">
+    <value>本地分机号码长度:</value>
+  </data>
+  <data name="firstExensionNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 64</value>
+  </data>
+  <data name="firstExensionNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="firstExensionNumberLabel.Text" xml:space="preserve">
+    <value>第一个分机号:</value>
+  </data>
+  <data name="alphaNumericAllowedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 17</value>
+  </data>
+  <data name="alphaNumericAllowedLabel.Text" xml:space="preserve">
+    <value>允许分机号码是字符和数字 (SIP/IAX 用户)</value>
+  </data>
+  <data name="operatorExtensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 107</value>
+  </data>
+  <data name="operatorExtensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 17</value>
+  </data>
+  <data name="operatorExtensionLabel.Text" xml:space="preserve">
+    <value>接线员分机:</value>
+  </data>
+  <data name="analogMultipleExtenAllowedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 144</value>
+  </data>
+  <data name="analogMultipleExtenAllowedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 17</value>
+  </data>
+  <data name="analogMultipleExtenAllowedLabel.Text" xml:space="preserve">
+    <value>允许模拟电话分配多个分机号码</value>
+  </data>
+  <data name="agentLoginExtensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 53</value>
+  </data>
+  <data name="agentLoginExtensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="agentLoginExtensionLabel.Text" xml:space="preserve">
+    <value>座席登录分机:</value>
+  </data>
+  <data name="agentCallbackLoginExtensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 112</value>
+  </data>
+  <data name="agentCallbackLoginExtensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="agentCallbackLoginExtensionLabel.Text" xml:space="preserve">
+    <value>座席回叫登录分机:</value>
+  </data>
+  <data name="voicemailPasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 206</value>
+  </data>
+  <data name="voicemailPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="voicemailPasswordLabel.Text" xml:space="preserve">
+    <value>语音邮件密码:</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wizard1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="wizard1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>746, 500</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wizard1.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="wizardPage2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="wizardPage2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="wizardPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 452</value>
+  </data>
+  <data name="wizardPage2.Text" xml:space="preserve">
+    <value>呼叫停泊</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 82</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>(例如: '701-720') </value>
+  </data>
+  <data name="textBoxTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 120</value>
+  </data>
+  <data name="textBoxTimeout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="textBoxTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 23</value>
+  </data>
+  <data name="textBoxParkPos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 76</value>
+  </data>
+  <data name="textBoxParkPos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="textBoxParkPos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 23</value>
+  </data>
+  <data name="textBoxExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 35</value>
+  </data>
+  <data name="textBoxExtension.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="textBoxExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 23</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 126</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>呼叫可停泊的秒数:</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 81</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>把呼叫停泊到:</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 38</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>呼叫停泊分机:</value>
+  </data>
+  <data name="wizardPage3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="wizardPage3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="wizardPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 452</value>
+  </data>
+  <data name="wizardPage3.Text" xml:space="preserve">
+    <value>语音邮件</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 213</value>
+  </data>
+  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 215</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>回放选项</value>
+  </data>
+  <data name="saydurationCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 101</value>
+  </data>
+  <data name="saydurationCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="saydurationCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 34</value>
+  </data>
+  <data name="saydurationCheckBox.Text" xml:space="preserve">
+    <value>说出消息时长</value>
+  </data>
+  <data name="saycidCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 66</value>
+  </data>
+  <data name="saycidCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="saycidCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 34</value>
+  </data>
+  <data name="saycidCheckBox.Text" xml:space="preserve">
+    <value>说出消息的 Caller-ID</value>
+  </data>
+  <data name="deleteCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 30</value>
+  </data>
+  <data name="deleteCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="deleteCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 34</value>
+  </data>
+  <data name="deleteCheckBox.Text" xml:space="preserve">
+    <value>只以邮件发送消息</value>
+  </data>
+  <data name="reviewCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 171</value>
+  </data>
+  <data name="reviewCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="reviewCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 34</value>
+  </data>
+  <data name="reviewCheckBox.Text" xml:space="preserve">
+    <value>允许用户重听</value>
+  </data>
+  <data name="envelopeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 136</value>
+  </data>
+  <data name="envelopeCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="envelopeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="envelopeCheckBox.Text" xml:space="preserve">
+    <value>播放信封</value>
+  </data>
+  <data name="maxGreetTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 119</value>
+  </data>
+  <data name="maxGreetTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="maxGreetTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 23</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 213</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 215</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>消息选项</value>
+  </data>
+  <data name="attachfmtTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 41</value>
+  </data>
+  <data name="attachfmtTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="attachfmtTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="minmessageTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 169</value>
+  </data>
+  <data name="minmessageTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="minmessageTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="maxmsgTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 126</value>
+  </data>
+  <data name="maxmsgTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="maxmsgTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="maxmessageTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 84</value>
+  </data>
+  <data name="maxmessageTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="maxmessageTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="extensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 33</value>
+  </data>
+  <data name="extensionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="extensionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 23</value>
+  </data>
+  <data name="attachCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 74</value>
+  </data>
+  <data name="attachCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="attachCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="operatorCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 160</value>
+  </data>
+  <data name="operatorCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="operatorCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="wizardPage4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="wizardPage4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="wizardPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 452</value>
+  </data>
+  <data name="wizardPage4.Text" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 4</value>
+  </data>
+  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>401, 248</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>新建用户时的默认设置</value>
+  </data>
+  <data name="isAgentCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 36</value>
+  </data>
+  <data name="isAgentCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="isAgentCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="isAgentCheckBox.Text" xml:space="preserve">
+    <value>座席</value>
+  </data>
+  <data name="hasVoicemailCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 36</value>
+  </data>
+  <data name="hasVoicemailCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="hasVoicemailCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="hasVoicemailCheckBox.Text" xml:space="preserve">
+    <value>语音邮件</value>
+  </data>
+  <data name="inDirectoryCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 79</value>
+  </data>
+  <data name="inDirectoryCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="inDirectoryCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="inDirectoryCheckBox.Text" xml:space="preserve">
+    <value>名字目录</value>
+  </data>
+  <data name="isCTICheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 81</value>
+  </data>
+  <data name="isCTICheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="isCTICheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="hasIaxCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 118</value>
+  </data>
+  <data name="hasIaxCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="hasIaxCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="isCallWaitingCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 160</value>
+  </data>
+  <data name="isCallWaitingCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="isCallWaitingCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="isCallWaitingCheckBox.Text" xml:space="preserve">
+    <value>呼叫等待</value>
+  </data>
+  <data name="hasSipCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 118</value>
+  </data>
+  <data name="hasSipCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="hasSipCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="threeWayCallingCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 160</value>
+  </data>
+  <data name="threeWayCallingCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="threeWayCallingCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="threeWayCallingCheckBox.Text" xml:space="preserve">
+    <value>3方通话</value>
+  </data>
+  <data name="voicemailPasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 203</value>
+  </data>
+  <data name="voicemailPasswordTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="voicemailPasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="wizardPage1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="wizardPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>629, 452</value>
+  </data>
+  <data name="wizardPage1.Text" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 13</value>
+  </data>
+  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 217</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>本地分机设置</value>
+  </data>
+  <data name="localExtenLengthComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 21</value>
+  </data>
+  <data name="localExtenLengthComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="firstExensionNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 58</value>
+  </data>
+  <data name="firstExensionNumberTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="operatorExtensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 101</value>
+  </data>
+  <data name="operatorExtensionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="alphaNumericAllowedCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 171</value>
+  </data>
+  <data name="alphaNumericAllowedCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="alphaNumericAllowedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 34</value>
+  </data>
+  <data name="analogMultipleExtenAllowedCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 135</value>
+  </data>
+  <data name="analogMultipleExtenAllowedCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="analogMultipleExtenAllowedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 34</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 238</value>
+  </data>
+  <data name="groupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 158</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>座席登录设置</value>
+  </data>
+  <data name="agentLoginExtensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 51</value>
+  </data>
+  <data name="agentLoginExtensionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="agentCallbackLoginExtensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 106</value>
+  </data>
+  <data name="agentCallbackLoginExtensionTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="$this.HeaderCaption" xml:space="preserve">
+    <value>配置Asterisk参数</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>746, 500</value>
+  </data>
+</root>

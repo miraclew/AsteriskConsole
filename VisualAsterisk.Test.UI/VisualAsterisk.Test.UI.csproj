@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28AA07D4-C918-4DD7-B0CC-F24932380376}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualAsterisk.Test.UI</RootNamespace>
+    <AssemblyName>VisualAsterisk.Test.UI</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Granados, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Granados.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractUITestCase.cs" />
+    <Compile Include="ErrorReporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorReporter.Designer.cs">
+      <DependentUpon>ErrorReporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTestRuner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestRuner.Designer.cs">
+      <DependentUpon>FormTestRuner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ErrorReporter.resx">
+      <DependentUpon>ErrorReporter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTestRuner.resx">
+      <DependentUpon>FormTestRuner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temp\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Temp\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temp\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temp\ListViewGroupsExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Asterisk.NET\Asterisk.NET.csproj">
+      <Project>{BC6E7DBA-C05A-45FE-A2A3-B1637CE16274}</Project>
+      <Name>Asterisk.NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\VisualAsterisk.Core\VisualAsterisk.Core.csproj">
+      <Project>{74D569DD-15F8-43C2-B2A2-3F1DF30497C5}</Project>
+      <Name>VisualAsterisk.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\VisualAsterisk.Manager.Controls\VisualAsterisk.Manager.Controls.csproj">
+      <Project>{35741D72-2DD9-4B28-B9D3-028C81C63BAD}</Project>
+      <Name>VisualAsterisk.Manager.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SipCommunicator\SipCommunicator.csproj">
+      <Project>{9779BCC6-0101-4170-B4BD-E9054B1BA33F}</Project>
+      <Name>SipCommunicator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\AstFileEditor\AstFileEditor.csproj">
+      <Project>{7D7314D7-58CA-4057-A285-F9B2C6811BCA}</Project>
+      <Name>AstFileEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualAsterisk.Asterisk\VisualAsterisk.Asterisk.csproj">
+      <Project>{C4673D76-6A90-4C9E-9EA2-96603C772351}</Project>
+      <Name>VisualAsterisk.Asterisk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualAsterisk.Main\VisualAsterisk.Main.csproj">
+      <Project>{6A033443-FE8E-4677-9D2E-DFACB7C17C6E}</Project>
+      <Name>VisualAsterisk.Main</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualAsterisk.Test\VisualAsterisk.Test.csproj">
+      <Project>{0D97C38A-E29F-45E2-913A-A32045A27D0F}</Project>
+      <Name>VisualAsterisk.Test</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

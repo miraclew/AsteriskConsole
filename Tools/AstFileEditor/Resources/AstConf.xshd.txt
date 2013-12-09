@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<!-- syntaxdefinition for AstConfig 2009 by Bob Wan -->
+<SyntaxDefinition name = "AstConfig" extensions = ".conf">
+
+  <Properties>
+		<Property name="LineComment" value=";"/>
+	</Properties>
+	
+	<Digits name = "Digits"   bold = "false" italic = "false" color = "DarkBlue"/>
+  
+  	<RuleSets>
+		<RuleSet ignorecase = "false">
+			<Delimiters>~!%^*()-+=|\#/{}[]:;"'&lt;&gt; , .? </Delimiters>
+			<Span name="LineComment" stopateol="true" bold="false" italic="false" color="Green" >
+				<Begin >;</Begin>
+			</Span>
+			<Span name = "STRING" bold = "false" italic = "false" color = "Magenta" stopateol = "true" escapecharacter="\">
+				<Begin>"</Begin>
+				<End>"</End>
+			</Span>
+			
+			<Span name = "CHAR" bold = "false" italic = "false" color = "Magenta" stopateol = "true" escapecharacter="\">
+				<Begin>'</Begin>
+				<End>'</End>
+			</Span>
+		
+			<MarkPrevious bold = "true" italic = "false" color = "MidnightBlue">(</MarkPrevious>
+		
+			<KeyWords name = "Punctuation" bold = "false" italic = "false" color = "DarkGreen">
+				<Key word = "?" />
+				<Key word = "," />
+				<Key word = "." />
+				<Key word = "(" />
+				<Key word = ")" />
+				<Key word = "[" />
+				<Key word = "]" />
+				<Key word = "{" />
+				<Key word = "}" />
+				<Key word = "+" />
+				<Key word = "-" />
+				<Key word = "/" />
+				<Key word = "%" />
+				<Key word = "*" />
+				<Key word = "&lt;" />
+				<Key word = "&gt;" />
+				<Key word = "^" />
+				<Key word = "!" />
+				<Key word = "|" />
+			</KeyWords>
+			<KeyWords name = "Literals" bold="true" italic="false" color="Purple">
+				<Key word = "yes" />
+				<Key word = "no" />
+			</KeyWords>
+
+			<KeyWords name = "Attributes" bold="false" italic="false" color="Red">
+			    <Key word = "exten" />
+			    <Key word = "enabled" />
+			    <Key word = "webenabled" />
+			    <Key word = "port" />
+			    <Key word = "bindaddr" />
+			    <Key word = "secret" />
+			    <Key word = "deny" />
+			    <Key word = "permit" />
+			    <Key word = "read" />
+			    <Key word = "write" />
+			</KeyWords>
+
+		</RuleSet>
+	</RuleSets>
+
+</SyntaxDefinition>

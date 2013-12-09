@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<VisualAsteriskVersion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0.3340.18346</Version>
+  <Features>
+    <string>feature 1</string>
+    <string>feature 2</string>
+  </Features>
+  <Bugfixes>
+    <string>bug fix1</string>
+    <string>bug fix2</string>
+  </Bugfixes>
+</VisualAsteriskVersion>

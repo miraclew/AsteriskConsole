@@ -1,0 +1,1491 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A033443-FE8E-4677-9D2E-DFACB7C17C6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualAsterisk.Main</RootNamespace>
+    <AssemblyName>VisualAsterisk</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationIcon>Resources\asterisk.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CATCHEXCEPTION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Granados, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Granados.dll</HintPath>
+    </Reference>
+    <Reference Include="pjsipDll, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\pjsipDll.dll</HintPath>
+    </Reference>
+    <Reference Include="SipekSdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\SipekSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.2864.18696, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.4.31904, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\zedgraph_dll_v5.1.4\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="Controller\SipAccountConfig.cs" />
+    <Compile Include="Controller\ChannelController.cs" />
+    <Compile Include="Gui\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AsteriskAdminUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AsteriskAdminUI.Designer.cs">
+      <DependentUpon>AsteriskAdminUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AsteriskOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AsteriskOptions.Designer.cs">
+      <DependentUpon>AsteriskOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AsteriskUIBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AsteriskUIBase.Designer.cs">
+      <DependentUpon>AsteriskUIBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AutoCompletion\CompletionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\AutoCompletion\CompletionWindow.Designer.cs">
+      <DependentUpon>CompletionWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\AutoCompletion\ICompletionData.cs" />
+    <Compile Include="Gui\AutoCompletion\ICompletionDataProvider.cs" />
+    <Compile Include="Gui\AutoCompletion\SimpleCompletionData.cs" />
+    <Compile Include="Gui\AutoCompletion\SimpleCompletionDataCollection.cs" />
+    <Compile Include="Gui\CheckUpdatesDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\CheckUpdatesDlg.Designer.cs">
+      <DependentUpon>CheckUpdatesDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\AddCallingRuleDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\AddCallingRuleDlg.Designer.cs">
+      <DependentUpon>AddCallingRuleDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\AddDialPlanDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\AddDialPlanDlg.Designer.cs">
+      <DependentUpon>AddDialPlanDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\AddEditStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\AddEditStep.Designer.cs">
+      <DependentUpon>AddEditStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\CallingRulesConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\CallingRulesConfigPage.Designer.cs">
+      <DependentUpon>CallingRulesConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\CallParkingConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\CallParkingConfigPage.Designer.cs">
+      <DependentUpon>CallParkingConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\CallQueuesConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\CallQueuesConfigPage.Designer.cs">
+      <DependentUpon>CallQueuesConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\ConferencingConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\ConferencingConfigPage.Designer.cs">
+      <DependentUpon>ConferencingConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\EditCodecDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\EditCodecDlg.Designer.cs">
+      <DependentUpon>EditCodecDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\DockPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DockPage.Designer.cs">
+      <DependentUpon>DockPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\IncomingCallRulesConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\IncomingCallRulesConfigPage.Designer.cs">
+      <DependentUpon>IncomingCallRulesConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\OptionsConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\OptionsConfigPage.Designer.cs">
+      <DependentUpon>OptionsConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\RingGroupsConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\RingGroupsConfigPage.Designer.cs">
+      <DependentUpon>RingGroupsConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\TrunkConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\TrunkConfigPage.Designer.cs">
+      <DependentUpon>TrunkConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\UsersConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\UsersConfigPage.Designer.cs">
+      <DependentUpon>UsersConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\VoiceMailConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\VoiceMailConfigPage.Designer.cs">
+      <DependentUpon>VoiceMailConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Configuration\VoiceMenusConfigPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Configuration\VoiceMenusConfigPage.Designer.cs">
+      <DependentUpon>VoiceMenusConfigPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\DialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DialogBase.Designer.cs">
+      <DependentUpon>DialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\CdrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\CdrForm.Designer.cs">
+      <DependentUpon>CdrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\LocalizedStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalizedStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\ChooseKeyPressAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\ChooseKeyPressAction.Designer.cs">
+      <DependentUpon>ChooseKeyPressAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\ConferenceEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\ConferenceEditorForm.Designer.cs">
+      <DependentUpon>ConferenceEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\CreateManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\CreateManageUser.Designer.cs">
+      <DependentUpon>CreateManageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\EditorWizardFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\EditorWizardFormBase.Designer.cs">
+      <DependentUpon>EditorWizardFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\IncommingCallRuleEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\IncommingCallRuleEditorForm.Designer.cs">
+      <DependentUpon>IncommingCallRuleEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\QueueEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\QueueEditorForm.Designer.cs">
+      <DependentUpon>QueueEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\RingGroupEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\RingGroupEditorForm.Designer.cs">
+      <DependentUpon>RingGroupEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\SelectManageUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\SelectManageUser.Designer.cs">
+      <DependentUpon>SelectManageUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\RegisterAsteriskWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\RegisterAsteriskWizard.Designer.cs">
+      <DependentUpon>RegisterAsteriskWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Preference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Preference.Designer.cs">
+      <DependentUpon>Preference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\AsteriskLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\AsteriskLogs.Designer.cs">
+      <DependentUpon>AsteriskLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\BackupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\BackupForm.Designer.cs">
+      <DependentUpon>BackupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\CreateBackupDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\CreateBackupDlg.Designer.cs">
+      <DependentUpon>CreateBackupDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\ManagerCommandLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\ManagerCommandLine.Designer.cs">
+      <DependentUpon>ManagerCommandLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\EditAsteriskHostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\EditAsteriskHostForm.Designer.cs">
+      <DependentUpon>EditAsteriskHostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\EditExtenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\EditExtenForm.Designer.cs">
+      <DependentUpon>EditExtenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\EditUserForm.Designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\ManagerBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\RealtimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\RealtimeForm.Designer.cs">
+      <DependentUpon>RealtimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\SipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\SipForm.Designer.cs">
+      <DependentUpon>SipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Forms\StatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Forms\StatusForm.Designer.cs">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Inventory\ConnectAsteriskServerProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\ConnectAsteriskServerProgress.Designer.cs">
+      <DependentUpon>ConnectAsteriskServerProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Inventory\EditAsteriskServerHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\EditAsteriskServerHost.Designer.cs">
+      <DependentUpon>EditAsteriskServerHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Inventory\InventoryWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Inventory\InventoryWindow.Designer.cs">
+      <DependentUpon>InventoryWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Log\TraceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Log\TraceWindow.Designer.cs">
+      <DependentUpon>TraceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\Log\TraceWindowTraceListener.cs" />
+    <Compile Include="Gui\PbxPanel\ChannelPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\ChannelPanel.Designer.cs">
+      <DependentUpon>ChannelPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannel.Designer.cs">
+      <DependentUpon>EditChannel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelGetVar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelGetVar.Designer.cs">
+      <DependentUpon>EditChannelGetVar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelMonitor.Designer.cs">
+      <DependentUpon>EditChannelMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelOriginate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelOriginate.Designer.cs">
+      <DependentUpon>EditChannelOriginate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelRedirect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelRedirect.Designer.cs">
+      <DependentUpon>EditChannelRedirect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelSetVar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditChannelSetVar.Designer.cs">
+      <DependentUpon>EditChannelSetVar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditTimeout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\EditTimeout.Designer.cs">
+      <DependentUpon>EditTimeout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\MeetMeRoomDetailInfoDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\MeetMeRoomDetailInfoDlg.Designer.cs">
+      <DependentUpon>MeetMeRoomDetailInfoDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\OperatorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\OperatorPanel.Designer.cs">
+      <DependentUpon>OperatorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\PeerDetailInfoDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\PeerDetailInfoDlg.Designer.cs">
+      <DependentUpon>PeerDetailInfoDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\PeerPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\PeerPanel.Designer.cs">
+      <DependentUpon>PeerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\QueueDetailInfoDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PbxPanel\QueueDetailInfoDlg.Designer.cs">
+      <DependentUpon>QueueDetailInfoDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\Hardware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\Hardware.Designer.cs">
+      <DependentUpon>Hardware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\Network.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\Network.Designer.cs">
+      <DependentUpon>Network.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\RecordVoiceMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\RecordVoiceMenu.Designer.cs">
+      <DependentUpon>RecordVoiceMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\RecordVoiceMenuDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\RecordVoiceMenuDlg.Designer.cs">
+      <DependentUpon>RecordVoiceMenuDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\SystemInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\SystemInfoForm.Designer.cs">
+      <DependentUpon>SystemInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\SystemInfo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\SystemInfo2.Designer.cs">
+      <DependentUpon>SystemInfo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\ZapDeviceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\SystemPanel\ZapDeviceInfo.Designer.cs">
+      <DependentUpon>ZapDeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Gui\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AboutBox.zh-CN.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AsteriskAdminUI.resx">
+      <DependentUpon>AsteriskAdminUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AsteriskAdminUI.zh-CHS.resx">
+      <DependentUpon>AsteriskAdminUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AsteriskOptions.resx">
+      <DependentUpon>AsteriskOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\AutoCompletion\CompletionWindow.resx">
+      <DependentUpon>CompletionWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CheckUpdatesDlg.resx">
+      <DependentUpon>CheckUpdatesDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\CheckUpdatesDlg.zh-CN.resx">
+      <DependentUpon>CheckUpdatesDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\AddCallingRuleDlg.resx">
+      <DependentUpon>AddCallingRuleDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\AddDialPlanDlg.resx">
+      <DependentUpon>AddDialPlanDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\AddEditStep.resx">
+      <DependentUpon>AddEditStep.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\CallingRulesConfigPage.resx">
+      <DependentUpon>CallingRulesConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\CallParkingConfigPage.resx">
+      <DependentUpon>CallParkingConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\CallQueuesConfigPage.resx">
+      <DependentUpon>CallQueuesConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\ConferencingConfigPage.resx">
+      <DependentUpon>ConferencingConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\EditCodecDlg.resx">
+      <DependentUpon>EditCodecDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\IncomingCallRulesConfigPage.resx">
+      <DependentUpon>IncomingCallRulesConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\OptionsConfigPage.resx">
+      <DependentUpon>OptionsConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\RingGroupsConfigPage.resx">
+      <DependentUpon>RingGroupsConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\TrunkConfigPage.resx">
+      <DependentUpon>TrunkConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\UsersConfigPage.resx">
+      <DependentUpon>UsersConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\VoiceMailConfigPage.resx">
+      <DependentUpon>VoiceMailConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Configuration\VoiceMenusConfigPage.resx">
+      <DependentUpon>VoiceMenusConfigPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DialogBase.resx">
+      <DependentUpon>DialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DockPage.resx">
+      <DependentUpon>DockPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\CdrForm.resx">
+      <DependentUpon>CdrForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\ConnectAsteriskServerProgress.zh-CN.resx">
+      <DependentUpon>ConnectAsteriskServerProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\EditAsteriskServerHost.zh-CN.resx">
+      <DependentUpon>EditAsteriskServerHost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Preference.zh-CN.resx">
+      <DependentUpon>Preference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LocalizedStrings.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\LocalizedStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\ChooseKeyPressAction.resx">
+      <DependentUpon>ChooseKeyPressAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\ConferenceEditorForm.resx">
+      <DependentUpon>ConferenceEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\ConferenceEditorForm.zh-CN.resx">
+      <DependentUpon>ConferenceEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\CreateManageUser.resx">
+      <DependentUpon>CreateManageUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\CreateManageUser.zh-CN.resx">
+      <DependentUpon>CreateManageUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\EditorWizardFormBase.resx">
+      <DependentUpon>EditorWizardFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\EditorWizardFormBase.zh-CN.resx">
+      <DependentUpon>EditorWizardFormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\IncommingCallRuleEditorForm.resx">
+      <DependentUpon>IncommingCallRuleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\QueueEditorForm.resx">
+      <DependentUpon>QueueEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\QueueEditorForm.zh-CN.resx">
+      <DependentUpon>QueueEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\RegisterAsteriskWizard.zh-CN.resx">
+      <DependentUpon>RegisterAsteriskWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\RingGroupEditorForm.resx">
+      <DependentUpon>RingGroupEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\RingGroupEditorForm.zh-CN.resx">
+      <DependentUpon>RingGroupEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\SelectManageUser.resx">
+      <DependentUpon>SelectManageUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\RegisterAsteriskWizard.resx">
+      <DependentUpon>RegisterAsteriskWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Preference.resx">
+      <DependentUpon>Preference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\AsteriskLogs.resx">
+      <DependentUpon>AsteriskLogs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\BackupForm.resx">
+      <DependentUpon>BackupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\CreateBackupDlg.resx">
+      <DependentUpon>CreateBackupDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\Hardware.resx">
+      <DependentUpon>Hardware.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\ManagerCommandLine.resx">
+      <DependentUpon>ManagerCommandLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\EditAsteriskHostForm.resx">
+      <DependentUpon>EditAsteriskHostForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\EditExtenForm.resx">
+      <DependentUpon>EditExtenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\SipForm.resx">
+      <DependentUpon>SipForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Forms\StatusForm.resx">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\ConnectAsteriskServerProgress.resx">
+      <DependentUpon>ConnectAsteriskServerProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\EditAsteriskServerHost.resx">
+      <DependentUpon>EditAsteriskServerHost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Inventory\InventoryWindow.resx">
+      <DependentUpon>InventoryWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Log\TraceWindow.resx">
+      <DependentUpon>TraceWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\ChannelPanel.resx">
+      <DependentUpon>ChannelPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\EditChannelGetVar.resx">
+      <DependentUpon>EditChannelGetVar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\EditChannelMonitor.resx">
+      <DependentUpon>EditChannelMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\EditChannelOriginate.resx">
+      <DependentUpon>EditChannelOriginate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\EditChannelRedirect.resx">
+      <DependentUpon>EditChannelRedirect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\EditChannelSetVar.resx">
+      <DependentUpon>EditChannelSetVar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\EditTimeout.resx">
+      <DependentUpon>EditTimeout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\MeetMeRoomDetailInfoDlg.resx">
+      <DependentUpon>MeetMeRoomDetailInfoDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\OperatorPanel.resx">
+      <DependentUpon>OperatorPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\PeerDetailInfoDlg.resx">
+      <DependentUpon>PeerDetailInfoDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\PeerPanel.resx">
+      <DependentUpon>PeerPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PbxPanel\QueueDetailInfoDlg.resx">
+      <DependentUpon>QueueDetailInfoDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\RecordVoiceMenu.resx">
+      <DependentUpon>RecordVoiceMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\RecordVoiceMenuDlg.resx">
+      <DependentUpon>RecordVoiceMenuDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\SystemInfoForm.resx">
+      <DependentUpon>SystemInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\SystemInfo2.resx">
+      <DependentUpon>SystemInfo2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\SystemPanel\ZapDeviceInfo.resx">
+      <DependentUpon>ZapDeviceInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\TrunkEditorForm.resx">
+      <DependentUpon>TrunkEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\UserEditorForm.resx">
+      <DependentUpon>UserEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\UserEditorForm.zh-CN.resx">
+      <DependentUpon>UserEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\VoiceMenuEditorForm.resx">
+      <DependentUpon>VoiceMenuEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\VoiceMenuEditorForm2.resx">
+      <DependentUpon>VoiceMenuEditorForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InventoryControl.resx">
+      <DependentUpon>InventoryControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InventoryControl.zh-CN.resx">
+      <DependentUpon>InventoryControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.sq.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.zh-CN.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\AsteriskLogsView.resx">
+      <DependentUpon>AsteriskLogsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\AsteriskLogsView.zh-CN.resx">
+      <DependentUpon>AsteriskLogsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\BackupRestoreView.resx">
+      <DependentUpon>BackupRestoreView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\BackupRestoreView.zh-CN.resx">
+      <DependentUpon>BackupRestoreView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\CallDetailRecordView.resx">
+      <DependentUpon>CallDetailRecordView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\CallDetailRecordView.zh-CN.resx">
+      <DependentUpon>CallDetailRecordView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\CallMonitor.zh-CN.resx">
+      <DependentUpon>CallMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ConferenceView.resx">
+      <DependentUpon>ConferenceView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ConferenceView.zh-CN.resx">
+      <DependentUpon>ConferenceView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\DataViewControl.resx">
+      <DependentUpon>DataViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\DialPlanView.resx">
+      <DependentUpon>DialPlanView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\DialPlanView.zh-CN.resx">
+      <DependentUpon>DialPlanView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\HardwareView.resx">
+      <DependentUpon>HardwareView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\HardwareView.zh-CN.resx">
+      <DependentUpon>HardwareView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ManagerCLIView.resx">
+      <DependentUpon>ManagerCLIView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\CallMonitor.resx">
+      <DependentUpon>CallMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ManagerCLIView.zh-CN.resx">
+      <DependentUpon>ManagerCLIView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PBXView.zh-CN.resx">
+      <DependentUpon>PBXView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\QueuesView.resx">
+      <DependentUpon>QueuesView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\PBXView.resx">
+      <DependentUpon>PBXView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\QueuesView.zh-CN.resx">
+      <DependentUpon>QueuesView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\RecordVoicePrompt.resx">
+      <DependentUpon>RecordVoicePrompt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\RecordVoicePrompt.zh-CN.resx">
+      <DependentUpon>RecordVoicePrompt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\RingGroupsView.resx">
+      <DependentUpon>RingGroupsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\RingGroupsView.zh-CN.resx">
+      <DependentUpon>RingGroupsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SummaryView.resx">
+      <DependentUpon>SummaryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SummaryView.zh-CN.resx">
+      <DependentUpon>SummaryView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SystemInfoView.resx">
+      <DependentUpon>SystemInfoView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SystemInfoView.zh-CN.resx">
+      <DependentUpon>SystemInfoView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\TrunksView.resx">
+      <DependentUpon>TrunksView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\TrunksView.zh-CN.resx">
+      <DependentUpon>TrunksView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\UsersView.resx">
+      <DependentUpon>UsersView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\UsersView2.resx">
+      <DependentUpon>UsersView2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\UsersView2.zh-CN.resx">
+      <DependentUpon>UsersView2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ViewControl.resx">
+      <DependentUpon>ViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\VoiceMenusView.resx">
+      <DependentUpon>VoiceMenusView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\VoiceMenusView.zh-CN.resx">
+      <DependentUpon>VoiceMenusView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.AsteriskChannel.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.AsteriskQueueEntry.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.AsteriskQueueMember.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.CallingRule.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.CallingRuleDialPlan.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.CallParkSetting.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.ConferenceRoom.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.IncomingCallRule.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.Options.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.QueueExtension.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.RingGroup.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.Trunk.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.UserExtension.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.VoiceMailSetting.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.MeetMeUser.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Main.Gui.PbxPanel.VariableBinding.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="UI\Forms\TrunkEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\TrunkEditorForm.Designer.cs">
+      <DependentUpon>TrunkEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\UserEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\UserEditorForm.Designer.cs">
+      <DependentUpon>UserEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\VoiceMenuEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\VoiceMenuEditorForm.Designer.cs">
+      <DependentUpon>VoiceMenuEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\VoiceMenuEditorForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\VoiceMenuEditorForm2.Designer.cs">
+      <DependentUpon>VoiceMenuEditorForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\VoiceMenuStepsHelper.cs" />
+    <Compile Include="UI\InventoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\InventoryControl.Designer.cs">
+      <DependentUpon>InventoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\AsteriskLogsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\AsteriskLogsView.Designer.cs">
+      <DependentUpon>AsteriskLogsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\BackupRestoreView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\BackupRestoreView.Designer.cs">
+      <DependentUpon>BackupRestoreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\CallDetailRecordView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\CallDetailRecordView.Designer.cs">
+      <DependentUpon>CallDetailRecordView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ConferenceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ConferenceView.Designer.cs">
+      <DependentUpon>ConferenceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\DataViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\DataViewControl.Designer.cs">
+      <DependentUpon>DataViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\DialPlanView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\DialPlanView.Designer.cs">
+      <DependentUpon>DialPlanView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\HardwareView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\HardwareView.Designer.cs">
+      <DependentUpon>HardwareView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ManagerCLIView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ManagerCLIView.Designer.cs">
+      <DependentUpon>ManagerCLIView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\CallMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\CallMonitor.Designer.cs">
+      <DependentUpon>CallMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\QueuesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\QueuesView.Designer.cs">
+      <DependentUpon>QueuesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\PBXView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\PBXView.Designer.cs">
+      <DependentUpon>PBXView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\RecordVoicePrompt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\RecordVoicePrompt.Designer.cs">
+      <DependentUpon>RecordVoicePrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\RingGroupsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\RingGroupsView.Designer.cs">
+      <DependentUpon>RingGroupsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\SummaryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\SummaryView.Designer.cs">
+      <DependentUpon>SummaryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\SystemInfoView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\SystemInfoView.Designer.cs">
+      <DependentUpon>SystemInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\TrunksView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\TrunksView.Designer.cs">
+      <DependentUpon>TrunksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\UsersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\UsersView.Designer.cs">
+      <DependentUpon>UsersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\UsersView2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\UsersView2.Designer.cs">
+      <DependentUpon>UsersView2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ViewControl.Designer.cs">
+      <DependentUpon>ViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\VoiceMenusView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\VoiceMenusView.Designer.cs">
+      <DependentUpon>VoiceMenusView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualAsteriskChanges.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>VisualAsteriskChanges.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Asterisk.NET\Asterisk.NET.csproj">
+      <Project>{BC6E7DBA-C05A-45FE-A2A3-B1637CE16274}</Project>
+      <Name>Asterisk.NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\IC.Controls\IC.Controls.csproj">
+      <Project>{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}</Project>
+      <Name>IC.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\VisualAsterisk.Core\VisualAsterisk.Core.csproj">
+      <Project>{74D569DD-15F8-43C2-B2A2-3F1DF30497C5}</Project>
+      <Name>VisualAsterisk.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\VisualAsterisk.Data\VisualAsterisk.Data.csproj">
+      <Project>{49B4D632-06F5-4876-BA50-58EC7D68C931}</Project>
+      <Name>VisualAsterisk.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\VisualAsterisk.ExceptionManagement\VisualAsterisk.ExceptionManagement.csproj">
+      <Project>{5DBD653B-6AF4-4CCC-AC23-5A68E848B632}</Project>
+      <Name>VisualAsterisk.ExceptionManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\VisualAsterisk.Manager.Controls\VisualAsterisk.Manager.Controls.csproj">
+      <Project>{35741D72-2DD9-4B28-B9D3-028C81C63BAD}</Project>
+      <Name>VisualAsterisk.Manager.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\AstFileEditor\AstFileEditor.csproj">
+      <Project>{7D7314D7-58CA-4057-A285-F9B2C6811BCA}</Project>
+      <Name>AstFileEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\SipPhone\SipPhone.csproj">
+      <Project>{DA627B04-F8E6-4B62-92CD-4B23C6DAFC18}</Project>
+      <Name>SipPhone</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VisualAsterisk.Asterisk\VisualAsterisk.Asterisk.csproj">
+      <Project>{C4673D76-6A90-4C9E-9EA2-96603C772351}</Project>
+      <Name>VisualAsterisk.Asterisk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Asterisk.NET.Manager.Event.CdrEvent.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Backup.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.CallDetailRecord.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.VoiceMenu.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Asterisk.Config.Configuration.ZapDevice.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Main.UI.Forms.VoiceMenuActionItem.datasource" />
+    <None Include="Properties\DataSources\VisualAsterisk.Main.ViewControls.VoicePrompt.datasource" />
+    <None Include="Resources\asterisk.ico" />
+    <None Include="Resources\cal_24.png" />
+    <None Include="Resources\cal_48.png" />
+    <Content Include="Resources\configs\manager.conf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\panel.png" />
+    <None Include="Resources\p3oEnetres.ico" />
+    <None Include="Resources\p3oEnetresdis.ico" />
+    <None Include="Resources\users.ico" />
+    <None Include="Resources\user.ico" />
+    <None Include="Resources\search4people.ico" />
+    <None Include="Resources\none.ico" />
+    <None Include="Resources\internetconnection.ico" />
+    <None Include="Resources\group.ico" />
+    <None Include="Resources\PropertiesHS.BMP" />
+    <None Include="Resources\EditTableHS.bmp" />
+    <None Include="Resources\Properties.bmp" />
+    <None Include="Resources\Dial.bmp" />
+    <None Include="Resources\Graph.bmp" />
+    <Content Include="Help\WhatsNew.htm" />
+    <None Include="Resources\01.png" />
+    <None Include="Resources\02.png" />
+    <None Include="Resources\03.png" />
+    <None Include="Resources\04.png" />
+    <None Include="Resources\05.png" />
+    <None Include="Resources\06.png" />
+    <None Include="Resources\07.png" />
+    <None Include="Resources\08.png" />
+    <None Include="Resources\09.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\new_user_24.png" />
+    <None Include="Resources\new_user_48.png" />
+    <None Include="Resources\user_24.png" />
+    <None Include="Resources\user_48.png" />
+    <None Include="Resources\uparrow.png" />
+    <None Include="Resources\downarrow.png" />
+    <Content Include="Resources\visualasterisk-tools.tar.gz">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Tool\visualasterisk-tools.tar.gz" />
+    <None Include="VisualAsteriskChanges.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>VisualAsteriskChanges.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\back_down.png" />
+    <None Include="Resources\back_up.png" />
+    <None Include="Resources\view_16.png" />
+    <None Include="Resources\view_previous_16.png" />
+    <None Include="Resources\divider_line.gif" />
+    <None Include="Resources\about_16.png" />
+    <None Include="Resources\about_32.png" />
+    <None Include="Resources\arrow_down_blue_16.png" />
+    <None Include="Resources\arrow_up_blue_16.png" />
+    <None Include="Resources\back_down1.png" />
+    <None Include="Resources\back_up1.png" />
+    <None Include="Resources\branch_16.png" />
+    <None Include="Resources\branch_24.png" />
+    <None Include="Resources\branch_48_shadow.png" />
+    <None Include="Resources\cabinet_16.png" />
+    <None Include="Resources\cabinet_32_shadow.png" />
+    <None Include="Resources\call_greeting_24.png" />
+    <None Include="Resources\cb_header.jpg" />
+    <None Include="Resources\cb_header_small.jpg" />
+    <None Include="Resources\column_chart_24.png" />
+    <None Include="Resources\connection_16.png" />
+    <None Include="Resources\date_time_16.png" />
+    <None Include="Resources\date_time_24.png" />
+    <None Include="Resources\date_time_48_shadow.png" />
+    <None Include="Resources\delete_16.png" />
+    <None Include="Resources\disk_blue_16.png" />
+    <None Include="Resources\disk_blue_161.png" />
+    <None Include="Resources\divider_line1.gif" />
+    <None Include="Resources\download_16.png" />
+    <None Include="Resources\earth_add_16.png" />
+    <None Include="Resources\earth_connection_48_shadow.png" />
+    <None Include="Resources\earth_network_16.png" />
+    <None Include="Resources\earth_network_32_shadow.png" />
+    <None Include="Resources\earth2_16.png" />
+    <None Include="Resources\earth2_32_shadow.png" />
+    <None Include="Resources\error_16.png" />
+    <None Include="Resources\flag_checkered_16.png" />
+    <None Include="Resources\flag_checkered_48_shadow.png" />
+    <None Include="Resources\flag_green_16.png" />
+    <None Include="Resources\flag_green_48_shadow.png" />
+    <None Include="Resources\folder_16.png" />
+    <None Include="Resources\folder_music_16.png" />
+    <None Include="Resources\gauge_128_shadow.png" />
+    <None Include="Resources\gauge_16.png" />
+    <None Include="Resources\gauge_24.png" />
+    <None Include="Resources\gauge_48_shadow.png" />
+    <None Include="Resources\gear_connection_24.png" />
+    <None Include="Resources\gear_connection_48.png" />
+    <None Include="Resources\gear_find_48_shadow.png" />
+    <None Include="Resources\gear_information_32.png" />
+    <None Include="Resources\hand_offer_16.png" />
+    <None Include="Resources\hand_offer_32_shadow.png" />
+    <None Include="Resources\hand_offer_48.png" />
+    <None Include="Resources\help_16.png" />
+    <None Include="Resources\help2_32.png" />
+    <None Include="Resources\history2_shadow_42.png" />
+    <None Include="Resources\id_card_24.png" />
+    <None Include="Resources\id_card_32_shadow.png" />
+    <None Include="Resources\import_16.png" />
+    <None Include="Resources\import1.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\keys_16.png" />
+    <None Include="Resources\keys_32_shadow.png" />
+    <None Include="Resources\loading1.gif" />
+    <None Include="Resources\lock_16.png" />
+    <None Include="Resources\lock_32_shadow.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\loudspeaker_16.png" />
+    <None Include="Resources\loudspeaker_32_shadow.png" />
+    <None Include="Resources\mail_earth_16.png" />
+    <None Include="Resources\mail_earth_32_shadow.png" />
+    <None Include="Resources\mailbox_full_16.png" />
+    <None Include="Resources\mailbox_full_24.png" />
+    <None Include="Resources\mailbox_full_48_shadow.png" />
+    <None Include="Resources\media_play_16.png" />
+    <None Include="Resources\media_record_red_16.png" />
+    <None Include="Resources\media_step_back_16.png" />
+    <None Include="Resources\media_step_forward_16.png" />
+    <None Include="Resources\media_stop_red_16.png" />
+    <None Include="Resources\microphone2_16.png" />
+    <None Include="Resources\music_16.png" />
+    <None Include="Resources\music_32_shadow.png" />
+    <None Include="Resources\navigate_left_16.png" />
+    <None Include="Resources\navigate_left2_16.png" />
+    <None Include="Resources\navigate_right_16.png" />
+    <None Include="Resources\navigate_right2_16.png" />
+    <None Include="Resources\node_24.png" />
+    <None Include="Resources\node_48_shadow.png" />
+    <None Include="Resources\nut_and_bolt_16.png" />
+    <None Include="Resources\nut_and_bolt_24.png" />
+    <None Include="Resources\nut_and_bolt_48_shadow.png" />
+    <None Include="Resources\office_24.png" />
+    <None Include="Resources\office_building_128_shadow.png" />
+    <None Include="Resources\office_building_48_shadow.png" />
+    <None Include="Resources\office_chair_24.png" />
+    <None Include="Resources\office_chair_48_shadow.png" />
+    <None Include="Resources\oszillograph_16.png" />
+    <None Include="Resources\oszillograph_32_shadow.png" />
+    <None Include="Resources\outlook_16.png" />
+    <None Include="Resources\outlook_32.png" />
+    <None Include="Resources\Phone_back_down.png" />
+    <None Include="Resources\phone_back_up.png" />
+    <None Include="Resources\phone_button_24.png" />
+    <None Include="Resources\phone_conference_16.png" />
+    <None Include="Resources\phone_conference_48_shadow.png" />
+    <None Include="Resources\phone_hang_up.png" />
+    <None Include="Resources\phone_pick_up.png" />
+    <None Include="Resources\phone_pick_up_48.png" />
+    <None Include="Resources\phone_redirect_128_shadow.png" />
+    <None Include="Resources\photo_scenery_16.png" />
+    <None Include="Resources\plug_32_shadow.png" />
+    <None Include="Resources\plug_delete_48_shadow.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\provider_connection_24.png" />
+    <None Include="Resources\refresh_16.png" />
+    <None Include="Resources\scroll_24.png" />
+    <None Include="Resources\select_all_16.png" />
+    <None Include="Resources\select_inverse_16.png" />
+    <None Include="Resources\select_none_16.png" />
+    <None Include="Resources\shoppingcart_full_16.png" />
+    <None Include="Resources\sportscar_24.png" />
+    <None Include="Resources\sportscar_48_shadow.png" />
+    <None Include="Resources\step_127_shadow.png" />
+    <None Include="Resources\stopwatch_16.png" />
+    <None Include="Resources\t2logo.png" />
+    <None Include="Resources\telephone_16.png" />
+    <None Include="Resources\telephone_24.png" />
+    <None Include="Resources\telephone_48_shadow.png" />
+    <None Include="Resources\text_loudspeaker_16.png" />
+    <None Include="Resources\text_loudspeaker_32_shadow.png" />
+    <None Include="Resources\toolbox_16.png" />
+    <None Include="Resources\toolbox_24.png" />
+    <None Include="Resources\toolbox_48_shadow.png" />
+    <None Include="Resources\trafficlight_on_48_shadow.png" />
+    <None Include="Resources\user1_message_32_shadow.png" />
+    <None Include="Resources\user1_mobilephone_128_shadow.png" />
+    <None Include="Resources\user1_telephone_16.png" />
+    <None Include="Resources\user1_telephone_24.png" />
+    <None Include="Resources\user1_telephone_48_shadow.png" />
+    <None Include="Resources\view_161.png" />
+    <None Include="Resources\view_previous_161.png" />
+    <None Include="Resources\voip_service_logo.gif" />
+    <None Include="Resources\window_error_16.png" />
+    <None Include="Resources\windows_16.png" />
+    <None Include="Resources\wizard_header.jpg" />
+    <None Include="Resources\conference_24.png" />
+    <None Include="Resources\conference_48.png" />
+    <None Include="Resources\phone_conference_24.png" />
+    <None Include="Resources\user1_message_48.png" />
+    <None Include="Resources\user1_message_24.png" />
+    <None Include="Resources\record_voice_48.png" />
+    <None Include="Resources\hardware_24.png" />
+    <None Include="Resources\hardware_48.png" />
+    <None Include="Resources\record_voice_24.png" />
+    <None Include="Resources\cli_48.png" />
+    <None Include="Resources\cli_24.png" />
+    <None Include="Resources\folder_tar_24.png" />
+    <None Include="Resources\folder_tar_48.png" />
+    <None Include="Resources\logfile_24.png" />
+    <None Include="Resources\logfile_48.png" />
+    <Content Include="Resources\kcmpci.png" />
+    <None Include="Resources\multiple_monitors_48.png" />
+    <None Include="Resources\multiple_monitors_24.png" />
+    <None Include="_Docs\Tooltips.xls" />
+    <Content Include="Strings.txt" />
+    <Content Include="version.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_Docs\actions.txt" />
+    <Content Include="_Docs\Changes Log.txt" />
+    <Content Include="_Docs\register asterisk procedure.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>$(TargetPath) -cv
+copy $(TargetDir)\version.xml $(ProjectDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿1. VisualAsterisk.Main.Gui.AsteriskAdminUI
+Menu
+Admin - 管理(&A)
+Edit - 编辑(&E)
+View - 视图(&V)
+Tool - 工具(&T)
+	Options - 选项(&O）
+	Language - 语言（&L）
+		Chinese - 中文
+		English - 英文
+
+Window - 窗口(&W)
+Help - 帮助(&H)

@@ -1,0 +1,427 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBB6EEEC-0447-4F03-ABCE-0B4B6DDEEF67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IC.Controls</RootNamespace>
+    <AssemblyName>IC.Controls</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\IC.Controls.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimatedProgressBarEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppBar\AppBar.cs" />
+    <Compile Include="AppBar\NativeMethods.cs" />
+    <Compile Include="ArrowLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ArrowLine.Designer.cs">
+      <DependentUpon>ArrowLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Blur.cs" />
+    <Compile Include="CountryComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CountryComboBox.Designer.cs">
+      <DependentUpon>CountryComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CredentialDialog.cs" />
+    <Compile Include="DataGridEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DividerLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GlassPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GroupBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageListEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntelliTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Knob.cs" />
+    <Compile Include="LinkButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoadingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingDialog.Designer.cs">
+      <DependentUpon>LoadingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapViewerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapViewerControl.Designer.cs">
+      <DependentUpon>MapViewerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPanel\PageCollection.cs" />
+    <Compile Include="MultiPanel\MultiPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiPanel\MultiPanelDesigner.cs" />
+    <Compile Include="MultiPanel\MultiPanelPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MultiPanel\MultiPanelPageDesigner.cs" />
+    <Compile Include="NoMouseEventsExtender.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NumberEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumberPad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NumberPad.Designer.cs">
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\ComboBox.designer.cs">
+      <DependentUpon>ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\GripBounds.cs" />
+    <Compile Include="Popup\NativeMethods.cs" />
+    <Compile Include="Popup\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\Popup.designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\PopupComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupComboBox.designer.cs">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBarEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuickTipsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuickTipsControl.Designer.cs">
+      <DependentUpon>QuickTipsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawBitmap.cs" />
+    <Compile Include="ReflectionPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReflectionPicture.Designer.cs">
+      <DependentUpon>ReflectionPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundedCornerPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SmoothLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StateComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToasterForm.Designer.cs">
+      <DependentUpon>ToasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStripEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStripLabelEx.cs">
+    </Compile>
+    <Compile Include="ToolStripTrackBar.cs">
+    </Compile>
+    <Compile Include="TrackBarEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrackBarEx.Designer.cs">
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Wizard\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\HeaderDesigner.cs" />
+    <Compile Include="Wizard\InfoContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InfoContainerDesigner.cs" />
+    <Compile Include="Wizard\InfoPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InfoPageDesigner.cs" />
+    <Compile Include="Wizard\PageCollection.cs" />
+    <Compile Include="Wizard\PageEventHandler.cs" />
+    <Compile Include="Wizard\Wizard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardDesigner.cs" />
+    <Compile Include="Wizard\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardPageDesigner.cs" />
+    <Compile Include="Wizard\WizardPageTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardPageTabControl.Designer.cs">
+      <DependentUpon>WizardPageTabControl.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnimatedProgressBarEx.resx">
+      <DependentUpon>AnimatedProgressBarEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DividerLine.resx">
+      <DependentUpon>DividerLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradientPanel.resx">
+      <DependentUpon>GradientPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupBoxEx.resx">
+      <DependentUpon>GroupBoxEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageButton.resx">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageListEx.resx">
+      <DependentUpon>ImageListEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkButton.resx">
+      <DependentUpon>LinkButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxEx.resx">
+      <DependentUpon>ListBoxEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoadingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapViewerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapViewerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPanel\MultiPanel.resx">
+      <DependentUpon>MultiPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiPanel\MultiPanelPage.resx">
+      <DependentUpon>MultiPanelPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberEdit.resx">
+      <DependentUpon>NumberEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberPad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NumberPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\ComboBox.resx">
+      <DependentUpon>ComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\PopupComboBox.resx">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBarEx.resx">
+      <DependentUpon>ProgressBarEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickTipsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuickTipsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReflectionPicture.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReflectionPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundedCornerPanel.resx">
+      <DependentUpon>RoundedCornerPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmoothLabel.resx">
+      <DependentUpon>SmoothLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToasterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ToasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrackBarEx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrackBarEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\InfoContainer.resx">
+      <DependentUpon>InfoContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\InfoPage.resx">
+      <DependentUpon>InfoPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardPageTabControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WizardPageTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_icon.png" />
+    <None Include="Resources\bevelOverlay.png" />
+    <None Include="Resources\loading.gif" />
+    <Content Include="Wizard\Wizard.bmp" />
+    <Content Include="Wizard\wizBigOnlineFolder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

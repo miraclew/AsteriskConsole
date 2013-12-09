@@ -1,0 +1,255 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4673D76-6A90-4C9E-9EA2-96603C772351}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualAsterisk.Asterisk</RootNamespace>
+    <AssemblyName>VisualAsterisk.Asterisk</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentManager.cs" />
+    <Compile Include="AgentState.cs" />
+    <Compile Include="AmaFlags.cs" />
+    <Compile Include="AsteriskAgent.cs" />
+    <Compile Include="AsteriskChannel.cs" />
+    <Compile Include="AsteriskExtension.cs" />
+    <Compile Include="AsteriskObject.cs" />
+    <Compile Include="AsteriskPeer.cs" />
+    <Compile Include="AsteriskQueueEntry.cs" />
+    <Compile Include="AsteriskQueueMember.cs" />
+    <Compile Include="AsteriskVersion.cs" />
+    <Compile Include="Backup.cs" />
+    <Compile Include="CallDetailRecord.cs" />
+    <Compile Include="CallerId.cs" />
+    <Compile Include="ChannelManager.cs" />
+    <Compile Include="ChannelState.cs" />
+    <Compile Include="ChannelStateHistoryEntry.cs" />
+    <Compile Include="Codecs.cs" />
+    <Compile Include="Config\AsteriskConfigManager.cs" />
+    <Compile Include="Config\ConfigFiles\Category.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigDirective.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigElement.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigFile.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigFileReader.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigAgent.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigParseException.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigVariable.cs" />
+    <Compile Include="Config\ConfigFiles\Dialplan\ConfigExtension.cs" />
+    <Compile Include="Config\ConfigFiles\Dialplan\ConfigInclude.cs" />
+    <Compile Include="Config\ConfigFiles\Dialplan\ExtensionsConfigFile.cs" />
+    <Compile Include="Config\ConfigFiles\Dialplan\ExtensionsConfigFileReader.cs" />
+    <Compile Include="Config\ConfigFiles\ExecDirective.cs" />
+    <Compile Include="Config\ConfigFiles\IConfigFile.cs" />
+    <Compile Include="Config\ConfigFiles\IConfigFileReader.cs" />
+    <Compile Include="Config\ConfigFiles\IncludeDirective.cs" />
+    <Compile Include="Config\ConfigFiles\MissingDirectiveParameterException.cs" />
+    <Compile Include="Config\ConfigFiles\MissingEqualSignException.cs" />
+    <Compile Include="Config\Configuration\CallingRule.cs" />
+    <Compile Include="Config\Configuration\CallingRuleDialPlan.cs" />
+    <Compile Include="Config\Configuration\CallParkSetting.cs" />
+    <Compile Include="Config\Configuration\ConferenceRoom.cs" />
+    <Compile Include="Config\Configuration\ConfigurationChange.cs" />
+    <Compile Include="Config\Configuration\ConfigurationItemBase.cs" />
+    <Compile Include="Config\Configuration\ConfigurationPropertyAttribute.cs" />
+    <Compile Include="Config\Configuration\ConfigurationUtil.cs" />
+    <Compile Include="Config\Configuration\IConfiguration.cs" />
+    <Compile Include="Config\Configuration\IExtension.cs" />
+    <Compile Include="Config\Configuration\IncomingCallRule.cs" />
+    <Compile Include="Config\Configuration\Options.cs" />
+    <Compile Include="Config\Configuration\QueueExtension.cs" />
+    <Compile Include="Config\Configuration\RingGroup.cs" />
+    <Compile Include="Config\Configuration\Trunk.cs" />
+    <Compile Include="Config\Configuration\UserExtension.cs" />
+    <Compile Include="Config\Configuration\VoiceMailSetting.cs" />
+    <Compile Include="Config\Configuration\VoiceMenu.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Agi.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Macro.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Ringing.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\SayAlpha.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\SayDigits.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\SayNumber.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\SetLanguage.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\SetMusicOnHold.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\UserEvent.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\VoiceMail.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\VoiceMenuAction.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Answer.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Authenticate.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Background.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Busy.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\CheckOwnVoiceMail.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Congestion.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Dial.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\DialRingGroup.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\DigitsTimeout.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\DISA.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Goto.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Directory.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\GotoExtension.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\GotoMenu.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\GoToTimebasedRule.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Hangup.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Playback.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\ResponseTimeout.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\StepAttribute.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\Wait.cs" />
+    <Compile Include="Config\Configuration\VoiceMenuStep\WaitExten.cs" />
+    <Compile Include="Config\Configuration\ZapDevice.cs" />
+    <Compile Include="Config\IAsteriskConfigManager.cs" />
+    <Compile Include="Config\Remote\RemoteConfigFile.cs" />
+    <Compile Include="Config\Remote\RemoteConfigFileReader.cs" />
+    <Compile Include="Config\ConfigFiles\UnknownDirectiveException.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DialedChannelHistoryEntry.cs" />
+    <Compile Include="Disposition.cs" />
+    <Compile Include="DtmfMode.cs" />
+    <Compile Include="Exception\AsteriskException.cs" />
+    <Compile Include="AsteriskQueue.cs" />
+    <Compile Include="Config\Internal\AstCategory.cs" />
+    <Compile Include="Config\Internal\AstConfig.cs" />
+    <Compile Include="Config\Internal\AstContext.cs" />
+    <Compile Include="Config\Internal\AstExten.cs" />
+    <Compile Include="Config\Internal\AstInclude.cs" />
+    <Compile Include="Config\Internal\AstVariable.cs" />
+    <Compile Include="Config\ConfigFiles\ConfigManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config\Setting\Ael.cs" />
+    <Compile Include="Config\Setting\Agents.cs" />
+    <Compile Include="Config\ConfigFiles\AstConfigFileAttribute.cs" />
+    <Compile Include="Config\ConfigFiles\AstConfigHelpTextAttribute.cs" />
+    <Compile Include="Config\ConfigFiles\AstConfigPropertyAttribute.cs" />
+    <Compile Include="Config\ConfigFiles\AstConfigUIAttribute.cs" />
+    <Compile Include="Config\ConfigFiles\AstConfigVariableAttribute.cs" />
+    <Compile Include="Config\Setting\Asterisk.cs" />
+    <Compile Include="Config\Setting\Cdr.cs" />
+    <Compile Include="Config\Setting\ConfigFileBase.cs" />
+    <Compile Include="Config\Setting\Extension.cs" />
+    <Compile Include="Config\Setting\H232.cs" />
+    <Compile Include="Config\Setting\Iax.cs" />
+    <Compile Include="Config\Setting\Manager.cs" />
+    <Compile Include="Config\Setting\Meetme.cs" />
+    <Compile Include="Config\Setting\Modules.cs" />
+    <Compile Include="Config\Setting\Queues.cs" />
+    <Compile Include="Config\Setting\Sip.cs" />
+    <Compile Include="Config\Setting\Users.cs" />
+    <Compile Include="Config\Setting\Voicemail.cs" />
+    <Compile Include="Config\Setting\Zapata.cs" />
+    <Compile Include="DefaultAsteriskServer.cs" />
+    <Compile Include="Dialplan\Application\AddQueueMember.cs" />
+    <Compile Include="Dialplan\Application\ADSIProg.cs" />
+    <Compile Include="Dialplan\Application\AgentCallbackLogin.cs" />
+    <Compile Include="Dialplan\Application\AgentLogin.cs" />
+    <Compile Include="Dialplan\Application\AgentMonitorOutgoing.cs" />
+    <Compile Include="Dialplan\Application\AGI.cs" />
+    <Compile Include="Dialplan\Application\AlarmReceiver.cs" />
+    <Compile Include="Dialplan\Application\AMD.cs" />
+    <Compile Include="Dialplan\Application\Answer.cs" />
+    <Compile Include="Dialplan\Application\AppendCDRUserField.cs" />
+    <Compile Include="Dialplan\Application\ApplicationBase.cs" />
+    <Compile Include="Dialplan\Application\Authenticate.cs" />
+    <Compile Include="Dialplan\Application\Background.cs" />
+    <Compile Include="Dialplan\Application\BackgroundDetect.cs" />
+    <Compile Include="Dialplan\Application\Busy.cs" />
+    <Compile Include="Dialplan\Application\ChangeMonitor.cs" />
+    <Compile Include="Dialplan\Application\ChanIsAvail.cs" />
+    <Compile Include="Dialplan\Application\ChannelRedirect.cs" />
+    <Compile Include="Dialplan\Application\ChanSpy.cs" />
+    <Compile Include="Dialplan\Function\AGENT.cs" />
+    <Compile Include="Dialplan\Function\ARRAY.cs" />
+    <Compile Include="Dialplan\Function\FunctionBase.cs" />
+    <Compile Include="Dialplan\Variable\AsteriskVariables.cs" />
+    <Compile Include="Config\ConfigFiles\IConfig.cs" />
+    <Compile Include="Exception\ConfigFileParseErrorException.cs" />
+    <Compile Include="Exception\InvalidPenaltyException.cs" />
+    <Compile Include="Exception\ManagerOperationException.cs" />
+    <Compile Include="Exception\NoSuchChannelException.cs" />
+    <Compile Include="Exception\NoSuchInterfaceException.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="ExtensionHistoryEntry.cs" />
+    <Compile Include="HangupCause.cs" />
+    <Compile Include="HardwareManager.cs" />
+    <Compile Include="IAsteriskObject.cs" />
+    <Compile Include="IAsteriskServer.cs" />
+    <Compile Include="IAsteriskServerComponent.cs" />
+    <Compile Include="INotifyAsteriskServerChanged.cs" />
+    <Compile Include="Exception\ManagerCommunicationException.cs" />
+    <Compile Include="AsteriskMeetMeRoom.cs" />
+    <Compile Include="INotifyAsteriskQueueChanged.cs" />
+    <Compile Include="IOriginateCallback.cs" />
+    <Compile Include="LinkedChannelHistoryEntry.cs" />
+    <Compile Include="ManagerCommunicationExceptionMapper.cs" />
+    <Compile Include="ManagerConnectionInfo.cs" />
+    <Compile Include="Manager\AsteriskController.cs" />
+    <Compile Include="Manager\AsteriskManager.cs" />
+    <Compile Include="MeetMeManager.cs" />
+    <Compile Include="MeetMeUser.cs" />
+    <Compile Include="MeetMeUserState.cs" />
+    <Compile Include="OriginateCallbackData.cs" />
+    <Compile Include="ParkedCallManager.cs" />
+    <Compile Include="ParkedCall.cs" />
+    <Compile Include="PeerMananger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueEntryState.cs" />
+    <Compile Include="QueueManager.cs" />
+    <Compile Include="QueueMemberState.cs" />
+    <Compile Include="RingStrategy.cs" />
+    <Compile Include="Tech.cs" />
+    <Compile Include="Voicemailbox.cs" />
+    <Compile Include="ZapChannel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_Docs\Changes Log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Asterisk.NET\Asterisk.NET.csproj">
+      <Project>{BC6E7DBA-C05A-45FE-A2A3-B1637CE16274}</Project>
+      <Name>Asterisk.NET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\VisualAsterisk.Core\VisualAsterisk.Core.csproj">
+      <Project>{74D569DD-15F8-43C2-B2A2-3F1DF30497C5}</Project>
+      <Name>VisualAsterisk.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="infoProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>110, 17</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="operatorLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="operatorLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="operatorLabel.HelpText" xml:space="preserve">
+    <value>Enable Callers to exit the voicemail application and connect to an operator extension. The operator extension must be defined from the 'Options' panel.</value>
+  </data>
+  <data name="operatorLabel.HelpTitle" xml:space="preserve">
+    <value>Dail 'O' for Operator:</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="operatorLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 124</value>
+  </data>
+  <data name="operatorLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 14</value>
+  </data>
+  <data name="operatorLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="operatorLabel.Text" xml:space="preserve">
+    <value>Dial '0' for Operator:</value>
+  </data>
+  <data name="&gt;&gt;operatorLabel.Name" xml:space="preserve">
+    <value>operatorLabel</value>
+  </data>
+  <data name="&gt;&gt;operatorLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;operatorLabel.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;operatorLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="attachfmtLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="attachfmtLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="attachfmtLabel.HelpText" xml:space="preserve">
+    <value>This selection box controls the format in which messages are delivered by e-mail.</value>
+  </data>
+  <data name="attachfmtLabel.HelpTitle" xml:space="preserve">
+    <value>Attach Format:</value>
+  </data>
+  <data name="attachfmtLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 37</value>
+  </data>
+  <data name="attachfmtLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 14</value>
+  </data>
+  <data name="attachfmtLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="attachfmtLabel.Text" xml:space="preserve">
+    <value>Attach Format:</value>
+  </data>
+  <data name="&gt;&gt;attachfmtLabel.Name" xml:space="preserve">
+    <value>attachfmtLabel</value>
+  </data>
+  <data name="&gt;&gt;attachfmtLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;attachfmtLabel.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;attachfmtLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="maxmessageLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="maxmessageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maxmessageLabel.HelpText" xml:space="preserve">
+    <value>This select box sets the maximum number of messages that a user may have in any of their folders.</value>
+  </data>
+  <data name="maxmessageLabel.HelpTitle" xml:space="preserve">
+    <value>Maximum messages per folder:</value>
+  </data>
+  <data name="maxmessageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 72</value>
+  </data>
+  <data name="maxmessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 14</value>
+  </data>
+  <data name="maxmessageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="maxmessageLabel.Text" xml:space="preserve">
+    <value>Maximum messages:</value>
+  </data>
+  <data name="&gt;&gt;maxmessageLabel.Name" xml:space="preserve">
+    <value>maxmessageLabel</value>
+  </data>
+  <data name="&gt;&gt;maxmessageLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxmessageLabel.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;maxmessageLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="minmessageLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="minmessageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="minmessageLabel.HelpText" xml:space="preserve">
+    <value>This select box sets the minimum duration of a voicemail message in seconds. Messages below this threshold will be automatically deleted.</value>
+  </data>
+  <data name="minmessageLabel.HelpTitle" xml:space="preserve">
+    <value>Minimum message Time:</value>
+  </data>
+  <data name="minmessageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 142</value>
+  </data>
+  <data name="minmessageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 14</value>
+  </data>
+  <data name="minmessageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="minmessageLabel.Text" xml:space="preserve">
+    <value>Min message time:</value>
+  </data>
+  <data name="&gt;&gt;minmessageLabel.Name" xml:space="preserve">
+    <value>minmessageLabel</value>
+  </data>
+  <data name="&gt;&gt;minmessageLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;minmessageLabel.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;minmessageLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="maxmsgLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="maxmsgLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maxmsgLabel.HelpText" xml:space="preserve">
+    <value>This select box sets the maximum duration of a voicemail message in seconds. Message recording will not occur for times greater than this amount.</value>
+  </data>
+  <data name="maxmsgLabel.HelpTitle" xml:space="preserve">
+    <value>Maximum Message Time:</value>
+  </data>
+  <data name="maxmsgLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 107</value>
+  </data>
+  <data name="maxmsgLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 14</value>
+  </data>
+  <data name="maxmsgLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="maxmsgLabel.Text" xml:space="preserve">
+    <value>Max message time:</value>
+  </data>
+  <data name="&gt;&gt;maxmsgLabel.Name" xml:space="preserve">
+    <value>maxmsgLabel</value>
+  </data>
+  <data name="&gt;&gt;maxmsgLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxmsgLabel.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;maxmsgLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="attachLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="attachLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="attachLabel.HelpText" xml:space="preserve">
+    <value>This option defines whether or not voicemails are sent to the Users' e-mail addresses as attachments. Note: You need to have an smtp server configured for this functionality.</value>
+  </data>
+  <data name="attachLabel.HelpTitle" xml:space="preserve">
+    <value>Attach recording to e-mail:</value>
+  </data>
+  <data name="attachLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 49</value>
+  </data>
+  <data name="attachLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 14</value>
+  </data>
+  <data name="attachLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="attachLabel.Text" xml:space="preserve">
+    <value>Attach recordings to e-mail:</value>
+  </data>
+  <data name="&gt;&gt;attachLabel.Name" xml:space="preserve">
+    <value>attachLabel</value>
+  </data>
+  <data name="&gt;&gt;attachLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;attachLabel.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;attachLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="extensionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="extensionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="extensionLabel.HelpText" xml:space="preserve">
+    <value>This option, i.e. "2345" defines the extension that Users call in order to access their voicemail accounts.</value>
+  </data>
+  <data name="extensionLabel.HelpTitle" xml:space="preserve">
+    <value>Extension for checking Message:</value>
+  </data>
+  <data name="extensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 12</value>
+  </data>
+  <data name="extensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 14</value>
+  </data>
+  <data name="extensionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="extensionLabel.Text" xml:space="preserve">
+    <value>Extension for checking messages:</value>
+  </data>
+  <data name="&gt;&gt;extensionLabel.Name" xml:space="preserve">
+    <value>extensionLabel</value>
+  </data>
+  <data name="&gt;&gt;extensionLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;extensionLabel.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;extensionLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="maxGreetLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="maxGreetLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maxGreetLabel.HelpText" xml:space="preserve">
+    <value>Set the maximum number of seconds for a User's voicemail greeting.</value>
+  </data>
+  <data name="maxGreetLabel.HelpTitle" xml:space="preserve">
+    <value>Max Greeting:</value>
+  </data>
+  <data name="maxGreetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 86</value>
+  </data>
+  <data name="maxGreetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 14</value>
+  </data>
+  <data name="maxGreetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="maxGreetLabel.Text" xml:space="preserve">
+    <value>Max greeting (seconds):</value>
+  </data>
+  <data name="&gt;&gt;maxGreetLabel.Name" xml:space="preserve">
+    <value>maxGreetLabel</value>
+  </data>
+  <data name="&gt;&gt;maxGreetLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxGreetLabel.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;maxGreetLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="localExtenDigitsLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="localExtenDigitsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="localExtenDigitsLabel.HelpTitle" xml:space="preserve">
+    <value>Extension for checking Message:</value>
+  </data>
+  <data name="localExtenDigitsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 29</value>
+  </data>
+  <data name="localExtenDigitsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 17</value>
+  </data>
+  <data name="localExtenDigitsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="localExtenDigitsLabel.Text" xml:space="preserve">
+    <value>Local Extension Length:</value>
+  </data>
+  <data name="&gt;&gt;localExtenDigitsLabel.Name" xml:space="preserve">
+    <value>localExtenDigitsLabel</value>
+  </data>
+  <data name="&gt;&gt;localExtenDigitsLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;localExtenDigitsLabel.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;localExtenDigitsLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="firstExensionNumberLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="firstExensionNumberLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="firstExensionNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 64</value>
+  </data>
+  <data name="firstExensionNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 17</value>
+  </data>
+  <data name="firstExensionNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="firstExensionNumberLabel.Text" xml:space="preserve">
+    <value>First Extension Number :</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberLabel.Name" xml:space="preserve">
+    <value>firstExensionNumberLabel</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberLabel.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="alphaNumericAllowedLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="alphaNumericAllowedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="alphaNumericAllowedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 177</value>
+  </data>
+  <data name="alphaNumericAllowedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>328, 17</value>
+  </data>
+  <data name="alphaNumericAllowedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="alphaNumericAllowedLabel.Text" xml:space="preserve">
+    <value>Allow extensions to be AlphaNumeric (SIP/IAX users)</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedLabel.Name" xml:space="preserve">
+    <value>alphaNumericAllowedLabel</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedLabel.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="operatorExtensionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="operatorExtensionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="operatorExtensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 100</value>
+  </data>
+  <data name="operatorExtensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 17</value>
+  </data>
+  <data name="operatorExtensionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="operatorExtensionLabel.Text" xml:space="preserve">
+    <value>Operator:</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionLabel.Name" xml:space="preserve">
+    <value>operatorExtensionLabel</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionLabel.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="analogMultipleExtenAllowedLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="analogMultipleExtenAllowedLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="analogMultipleExtenAllowedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 142</value>
+  </data>
+  <data name="analogMultipleExtenAllowedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>365, 17</value>
+  </data>
+  <data name="analogMultipleExtenAllowedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="analogMultipleExtenAllowedLabel.Text" xml:space="preserve">
+    <value>Allow analog phones to be assigned to multiple extensions</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedLabel.Name" xml:space="preserve">
+    <value>analogMultipleExtenAllowedLabel</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedLabel.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="agentLoginExtensionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="agentLoginExtensionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agentLoginExtensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 44</value>
+  </data>
+  <data name="agentLoginExtensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 17</value>
+  </data>
+  <data name="agentLoginExtensionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="agentLoginExtensionLabel.Text" xml:space="preserve">
+    <value>Agent Login Extension :</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionLabel.Name" xml:space="preserve">
+    <value>agentLoginExtensionLabel</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionLabel.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="agentCallbackLoginExtensionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="agentCallbackLoginExtensionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="agentCallbackLoginExtensionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 92</value>
+  </data>
+  <data name="agentCallbackLoginExtensionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 17</value>
+  </data>
+  <data name="agentCallbackLoginExtensionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="agentCallbackLoginExtensionLabel.Text" xml:space="preserve">
+    <value>Agent Callback Login Extension :</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionLabel.Name" xml:space="preserve">
+    <value>agentCallbackLoginExtensionLabel</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionLabel.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="voicemailPasswordLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="voicemailPasswordLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="voicemailPasswordLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 170</value>
+  </data>
+  <data name="voicemailPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 15</value>
+  </data>
+  <data name="voicemailPasswordLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="voicemailPasswordLabel.Text" xml:space="preserve">
+    <value>Voicemail Password:</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordLabel.Name" xml:space="preserve">
+    <value>voicemailPasswordLabel</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordLabel.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordLabel.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="smoothLabel1.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="smoothLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel1.HelpText" xml:space="preserve">
+    <value>If this option is set, then voicemails will not be checkable using a Phone.  Messages will be sent via e-mail, only.  Note: You need to have an smtp server configured for this functionality.</value>
+  </data>
+  <data name="smoothLabel1.HelpTitle" xml:space="preserve">
+    <value>Send messages by e-mail only:</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="smoothLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 34</value>
+  </data>
+  <data name="smoothLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 14</value>
+  </data>
+  <data name="smoothLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="smoothLabel1.Text" xml:space="preserve">
+    <value>Send messages by e-mail only</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Name" xml:space="preserve">
+    <value>smoothLabel1</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="smoothLabel2.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="smoothLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel2.HelpText" xml:space="preserve">
+    <value>If this option is enabled, the Caller ID of the party that left the message will be played back before the voicemail message begins playing.</value>
+  </data>
+  <data name="smoothLabel2.HelpTitle" xml:space="preserve">
+    <value>Say Message Caller-ID:</value>
+  </data>
+  <data name="smoothLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 62</value>
+  </data>
+  <data name="smoothLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 14</value>
+  </data>
+  <data name="smoothLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="smoothLabel2.Text" xml:space="preserve">
+    <value>Say message Caller-ID</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Name" xml:space="preserve">
+    <value>smoothLabel2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="smoothLabel3.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="smoothLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel3.HelpText" xml:space="preserve">
+    <value>If this option is set, the duration of the message in mintues will be played back before the voicemail message begins playing.</value>
+  </data>
+  <data name="smoothLabel3.HelpTitle" xml:space="preserve">
+    <value>Say Message Duration (in minutes) :</value>
+  </data>
+  <data name="smoothLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 90</value>
+  </data>
+  <data name="smoothLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 14</value>
+  </data>
+  <data name="smoothLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="smoothLabel3.Text" xml:space="preserve">
+    <value>Say message duration</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Name" xml:space="preserve">
+    <value>smoothLabel3</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="smoothLabel4.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="smoothLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel4.HelpText" xml:space="preserve">
+    <value>Turn on/off playing introductions about each message when accessing them from the voicemail application.</value>
+  </data>
+  <data name="smoothLabel4.HelpTitle" xml:space="preserve">
+    <value>Play envelope:</value>
+  </data>
+  <data name="smoothLabel4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 118</value>
+  </data>
+  <data name="smoothLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 14</value>
+  </data>
+  <data name="smoothLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="smoothLabel4.Text" xml:space="preserve">
+    <value>Play envelope</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Name" xml:space="preserve">
+    <value>smoothLabel4</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="smoothLabel5.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="smoothLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="smoothLabel5.HelpText" xml:space="preserve">
+    <value>Checking this option allows the caller to review their message before it is submitted as a new voicemail message.</value>
+  </data>
+  <data name="smoothLabel5.HelpTitle" xml:space="preserve">
+    <value>Allow callers to Review:</value>
+  </data>
+  <data name="smoothLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="smoothLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 146</value>
+  </data>
+  <data name="smoothLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 14</value>
+  </data>
+  <data name="smoothLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="smoothLabel5.Text" xml:space="preserve">
+    <value>Allow caller to review</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Name" xml:space="preserve">
+    <value>smoothLabel5</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;smoothLabel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.Name" xml:space="preserve">
+    <value>saydurationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.Name" xml:space="preserve">
+    <value>saycidCheckBox</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.Name" xml:space="preserve">
+    <value>deleteCheckBox</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.Name" xml:space="preserve">
+    <value>reviewCheckBox</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.Name" xml:space="preserve">
+    <value>envelopeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 160</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 177</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Playback Options</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="maxGreetTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 83</value>
+  </data>
+  <data name="maxGreetTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 22</value>
+  </data>
+  <data name="maxGreetTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;maxGreetTextBox.Name" xml:space="preserve">
+    <value>maxGreetTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxGreetTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxGreetTextBox.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;maxGreetTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.Name" xml:space="preserve">
+    <value>attachfmtTextBox</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.Name" xml:space="preserve">
+    <value>minmessageTextBox</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.Name" xml:space="preserve">
+    <value>maxmsgTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.Name" xml:space="preserve">
+    <value>maxmessageTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 160</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 177</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Message Options</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="extensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 12</value>
+  </data>
+  <data name="extensionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 22</value>
+  </data>
+  <data name="extensionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="extensionTextBox.ToolTip" xml:space="preserve">
+    <value>This option, i.e. "2345," defines the extension that Users call in order to access their voicemail accounts.</value>
+  </data>
+  <data name="&gt;&gt;extensionTextBox.Name" xml:space="preserve">
+    <value>extensionTextBox</value>
+  </data>
+  <data name="&gt;&gt;extensionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;extensionTextBox.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;extensionTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="attachCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 46</value>
+  </data>
+  <data name="attachCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="attachCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;attachCheckBox.Name" xml:space="preserve">
+    <value>attachCheckBox</value>
+  </data>
+  <data name="&gt;&gt;attachCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;attachCheckBox.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;attachCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="operatorCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 117</value>
+  </data>
+  <data name="operatorCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="operatorCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;operatorCheckBox.Name" xml:space="preserve">
+    <value>operatorCheckBox</value>
+  </data>
+  <data name="&gt;&gt;operatorCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;operatorCheckBox.Parent" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;operatorCheckBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="wizardPage3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="wizardPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 0</value>
+  </data>
+  <data name="wizardPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 373</value>
+  </data>
+  <data name="wizardPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="wizardPage3.Text" xml:space="preserve">
+    <value>Voice Mail</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Name" xml:space="preserve">
+    <value>wizardPage3</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.Parent" xml:space="preserve">
+    <value>wizard1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.Name" xml:space="preserve">
+    <value>isAgentCheckBox</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.Name" xml:space="preserve">
+    <value>hasVoicemailCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.Name" xml:space="preserve">
+    <value>inDirectoryCheckBox</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.Name" xml:space="preserve">
+    <value>isCTICheckBox</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.Name" xml:space="preserve">
+    <value>hasIaxCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.Name" xml:space="preserve">
+    <value>isCallWaitingCheckBox</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.Name" xml:space="preserve">
+    <value>hasSipCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.Name" xml:space="preserve">
+    <value>threeWayCallingCheckBox</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.Name" xml:space="preserve">
+    <value>voicemailPasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 6</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>401, 204</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Default Settings for a New User: </value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>wizardPage4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="wizardPage4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="wizardPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 0</value>
+  </data>
+  <data name="wizardPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 388</value>
+  </data>
+  <data name="wizardPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="wizardPage4.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.Name" xml:space="preserve">
+    <value>wizardPage4</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.Parent" xml:space="preserve">
+    <value>wizard1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.Name" xml:space="preserve">
+    <value>textBoxTimeout</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.Name" xml:space="preserve">
+    <value>textBoxParkPos</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.Name" xml:space="preserve">
+    <value>textBoxExtension</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="wizardPage2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="wizardPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 0</value>
+  </data>
+  <data name="wizardPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>587, 439</value>
+  </data>
+  <data name="wizardPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="wizardPage2.Text" xml:space="preserve">
+    <value>Call Parking</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.Name" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.Parent" xml:space="preserve">
+    <value>wizard1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizardPage1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 0</value>
+  </data>
+  <data name="wizardPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>587, 439</value>
+  </data>
+  <data name="wizardPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="wizardPage1.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Name" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Type" xml:space="preserve">
+    <value>Controls.Wizard.WizardPage, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.Parent" xml:space="preserve">
+    <value>wizard1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizard1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="wizard1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizard1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>677, 421</value>
+  </data>
+  <data name="wizard1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="wizard1.TablPanelTopMargin" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="wizard1.TabPanelWidth" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="wizard1.TabWidth" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;wizard1.Name" xml:space="preserve">
+    <value>wizard1</value>
+  </data>
+  <data name="&gt;&gt;wizard1.Type" xml:space="preserve">
+    <value>Controls.Wizard.Wizard, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizard1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="voiceMailSettingBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>364, 17</value>
+  </metadata>
+  <data name="saydurationCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 83</value>
+  </data>
+  <data name="saydurationCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 28</value>
+  </data>
+  <data name="saydurationCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="saydurationCheckBox.Text" xml:space="preserve">
+    <value>Say message duration</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.Name" xml:space="preserve">
+    <value>saydurationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;saydurationCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="voiceMailSettingBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>364, 17</value>
+  </metadata>
+  <data name="saycidCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 54</value>
+  </data>
+  <data name="saycidCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 28</value>
+  </data>
+  <data name="saycidCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="saycidCheckBox.Text" xml:space="preserve">
+    <value>Say message Caller-ID</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.Name" xml:space="preserve">
+    <value>saycidCheckBox</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;saycidCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="deleteCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 25</value>
+  </data>
+  <data name="deleteCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 28</value>
+  </data>
+  <data name="deleteCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="deleteCheckBox.Text" xml:space="preserve">
+    <value>Send messages by e-mail only</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.Name" xml:space="preserve">
+    <value>deleteCheckBox</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;deleteCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="reviewCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 141</value>
+  </data>
+  <data name="reviewCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 28</value>
+  </data>
+  <data name="reviewCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="reviewCheckBox.Text" xml:space="preserve">
+    <value>Allow users to review</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.Name" xml:space="preserve">
+    <value>reviewCheckBox</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;reviewCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="envelopeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 112</value>
+  </data>
+  <data name="envelopeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 28</value>
+  </data>
+  <data name="envelopeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="envelopeCheckBox.Text" xml:space="preserve">
+    <value>Play envelope</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.Name" xml:space="preserve">
+    <value>envelopeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;envelopeCheckBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="attachfmtTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 34</value>
+  </data>
+  <data name="attachfmtTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="attachfmtTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.Name" xml:space="preserve">
+    <value>attachfmtTextBox</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;attachfmtTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="minmessageTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 139</value>
+  </data>
+  <data name="minmessageTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="minmessageTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.Name" xml:space="preserve">
+    <value>minmessageTextBox</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;minmessageTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="maxmsgTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 104</value>
+  </data>
+  <data name="maxmsgTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="maxmsgTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.Name" xml:space="preserve">
+    <value>maxmsgTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;maxmsgTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="maxmessageTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 69</value>
+  </data>
+  <data name="maxmessageTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="maxmessageTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.Name" xml:space="preserve">
+    <value>maxmessageTextBox</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;maxmessageTextBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="isAgentCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 30</value>
+  </data>
+  <data name="isAgentCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="isAgentCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="isAgentCheckBox.Text" xml:space="preserve">
+    <value>Is Agent</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.Name" xml:space="preserve">
+    <value>isAgentCheckBox</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;isAgentCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="optionsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>600, 17</value>
+  </metadata>
+  <data name="hasVoicemailCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 30</value>
+  </data>
+  <data name="hasVoicemailCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="hasVoicemailCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="hasVoicemailCheckBox.Text" xml:space="preserve">
+    <value>Voicemail</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.Name" xml:space="preserve">
+    <value>hasVoicemailCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;hasVoicemailCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="inDirectoryCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 65</value>
+  </data>
+  <data name="inDirectoryCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="inDirectoryCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="inDirectoryCheckBox.Text" xml:space="preserve">
+    <value>In Directory</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.Name" xml:space="preserve">
+    <value>inDirectoryCheckBox</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;inDirectoryCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="isCTICheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 67</value>
+  </data>
+  <data name="isCTICheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="isCTICheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="isCTICheckBox.Text" xml:space="preserve">
+    <value>CTI</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.Name" xml:space="preserve">
+    <value>isCTICheckBox</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;isCTICheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="hasIaxCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 97</value>
+  </data>
+  <data name="hasIaxCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="hasIaxCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="hasIaxCheckBox.Text" xml:space="preserve">
+    <value>IAX</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.Name" xml:space="preserve">
+    <value>hasIaxCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;hasIaxCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="isCallWaitingCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 132</value>
+  </data>
+  <data name="isCallWaitingCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="isCallWaitingCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="isCallWaitingCheckBox.Text" xml:space="preserve">
+    <value>Call Waiting</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.Name" xml:space="preserve">
+    <value>isCallWaitingCheckBox</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;isCallWaitingCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="hasSipCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 97</value>
+  </data>
+  <data name="hasSipCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="hasSipCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="hasSipCheckBox.Text" xml:space="preserve">
+    <value>SIP</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.Name" xml:space="preserve">
+    <value>hasSipCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;hasSipCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="threeWayCallingCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 132</value>
+  </data>
+  <data name="threeWayCallingCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="threeWayCallingCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="threeWayCallingCheckBox.Text" xml:space="preserve">
+    <value>3-Way Calling</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.Name" xml:space="preserve">
+    <value>threeWayCallingCheckBox</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;threeWayCallingCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="voicemailPasswordTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 167</value>
+  </data>
+  <data name="voicemailPasswordTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="voicemailPasswordTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.Name" xml:space="preserve">
+    <value>voicemailPasswordTextBox</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;voicemailPasswordTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 67</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 14</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>(Ex: '701-720')</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxTimeout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 98</value>
+  </data>
+  <data name="textBoxTimeout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 22</value>
+  </data>
+  <data name="textBoxTimeout.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.Name" xml:space="preserve">
+    <value>textBoxTimeout</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;textBoxTimeout.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxParkPos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 62</value>
+  </data>
+  <data name="textBoxParkPos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 22</value>
+  </data>
+  <data name="textBoxParkPos.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.Name" xml:space="preserve">
+    <value>textBoxParkPos</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;textBoxParkPos.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 28</value>
+  </data>
+  <data name="textBoxExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 22</value>
+  </data>
+  <data name="textBoxExtension.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.Name" xml:space="preserve">
+    <value>textBoxExtension</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;textBoxExtension.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.HelpText" xml:space="preserve">
+    <value>How many seconds that a call can be parked for before it is reconnected by ringing the phone that parked the call, or disconnecting the call if it is not answered and moving on with the next calling rule that is defined in this context.</value>
+  </data>
+  <data name="label3.HelpTitle" xml:space="preserve">
+    <value>Max Parking Time: </value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 104</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 14</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Max Parking Time: </value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 67</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 14</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>What extensions to park calls on:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 31</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 14</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Extension to Dial for Parking Calls:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>Controls.SmoothLabel, Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>wizardPage2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.Name" xml:space="preserve">
+    <value>localExtenLengthComboBox</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.Name" xml:space="preserve">
+    <value>firstExensionNumberTextBox</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.Name" xml:space="preserve">
+    <value>operatorExtensionTextBox</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.Name" xml:space="preserve">
+    <value>alphaNumericAllowedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.Name" xml:space="preserve">
+    <value>analogMultipleExtenAllowedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 1</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 218</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Local Extension Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="localExtenLengthComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 29</value>
+  </data>
+  <data name="localExtenLengthComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="localExtenLengthComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.Name" xml:space="preserve">
+    <value>localExtenLengthComboBox</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;localExtenLengthComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="optionsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>600, 17</value>
+  </metadata>
+  <data name="firstExensionNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 59</value>
+  </data>
+  <data name="firstExensionNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="firstExensionNumberTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.Name" xml:space="preserve">
+    <value>firstExensionNumberTextBox</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;firstExensionNumberTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="operatorExtensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 95</value>
+  </data>
+  <data name="operatorExtensionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="operatorExtensionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.Name" xml:space="preserve">
+    <value>operatorExtensionTextBox</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;operatorExtensionTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="alphaNumericAllowedCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 172</value>
+  </data>
+  <data name="alphaNumericAllowedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 28</value>
+  </data>
+  <data name="alphaNumericAllowedCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.Name" xml:space="preserve">
+    <value>alphaNumericAllowedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;alphaNumericAllowedCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="analogMultipleExtenAllowedCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 134</value>
+  </data>
+  <data name="analogMultipleExtenAllowedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 28</value>
+  </data>
+  <data name="analogMultipleExtenAllowedCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.Name" xml:space="preserve">
+    <value>analogMultipleExtenAllowedCheckBox</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;analogMultipleExtenAllowedCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.Name" xml:space="preserve">
+    <value>agentLoginExtensionTextBox</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.Name" xml:space="preserve">
+    <value>agentCallbackLoginExtensionTextBox</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 228</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 137</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Agent Login Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>wizardPage1</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="agentLoginExtensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 42</value>
+  </data>
+  <data name="agentLoginExtensionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="agentLoginExtensionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.Name" xml:space="preserve">
+    <value>agentLoginExtensionTextBox</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;agentLoginExtensionTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="agentCallbackLoginExtensionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 87</value>
+  </data>
+  <data name="agentCallbackLoginExtensionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="agentCallbackLoginExtensionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.Name" xml:space="preserve">
+    <value>agentCallbackLoginExtensionTextBox</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;agentCallbackLoginExtensionTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 14</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt</value>
+  </data>
+  <data name="$this.HeaderCaption" xml:space="preserve">
+    <value>Configure command Asterisk settings</value>
+  </data>
+  <data name="$this.HeaderTitle" xml:space="preserve">
+    <value>PBX</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>677, 421</value>
+  </data>
+  <data name="&gt;&gt;infoProvider.Name" xml:space="preserve">
+    <value>infoProvider</value>
+  </data>
+  <data name="&gt;&gt;infoProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;voiceMailSettingBindingSource.Name" xml:space="preserve">
+    <value>voiceMailSettingBindingSource</value>
+  </data>
+  <data name="&gt;&gt;voiceMailSettingBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;optionsBindingSource.Name" xml:space="preserve">
+    <value>optionsBindingSource</value>
+  </data>
+  <data name="&gt;&gt;optionsBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PBXView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>VisualAsterisk.Main.ViewControls.ViewControl, VisualAsterisk, Version=1.0.3310.39960, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>
